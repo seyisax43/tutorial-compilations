@@ -1,0 +1,49 @@
+header {
+    
+ color: black;
+   margin-left: 50px;
+}
+body {
+    background-color: white;
+}
+main {
+
+    color: white;
+}
+.intro {
+   
+    background-color: rgb(204, 99, 116);
+   padding-left: 50px;
+   padding-top: 200px;
+   padding-bottom: 200px;
+}
+
+.columns { 
+ 
+    display: flex;
+
+   border: 20px single pink;
+   margin: 0 30px;
+   
+}
+
+.h3 { 
+ 
+    display: flex;
+   
+  size: 40px;
+  padding-left: 100px;
+
+}
+
+
+footer{
+    background-color: chocolate;
+    color: blanchedalmond;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 25px;
+    font-size: 200px;
+    
+    
+}

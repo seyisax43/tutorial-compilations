@@ -1,0 +1,119 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --main-color:#0b178f;
+    --text-color:#1c22844;
+}
+img{
+    width:100%;
+
+}
+body {
+    color: var(--text-color);
+}
+*::selection{
+    color:white;
+    background: var(--main-color);
+}
+
+/* custom scroll bar */
+html::-webkit-scrollbar{
+    width: 0.5rem;
+}
+html::-webkit-scrollbar-track{
+    width: 0.5rem;
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 5rem;
+}
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 18px 10px;
+    transition: 0.2s;
+}
+.logo{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+  font-size: 1rem;
+  padding: 10px 20px;
+  color: var(--text-color);
+  font-weight: 500;
+}.navbar a:hover{
+   background: var(--text-color);
+   color: #e94048;
+  }
+  #menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+
+  }
+
+  .home {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(17rem,1fr));
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .home-text span{
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  .home-text h1{
+    font-size: 3.4rem;
+    color: var(--main-color);
+  }
+
+  .home-text h2{
+    font-size: 1.6rem;
+    font-weight: bolder;
+  }
+  .home-text{
+    font-weight: 400;
+    margin: 0.7rem 0 1rem;
+  }
+  .home-img{
+    padding: 40px;
+  }
+  .btn{
+    display: inline-block;
+    background: var(--text-color);
+    padding: 0.8rem 2rem;
+    color: white;
+    font-weight: 500;
+  }
+  .btn:hover{
+    background: var(--main-color);
+    letter-spacing: 2px;
+    transition: .2s;
+  }
